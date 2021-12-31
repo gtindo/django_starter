@@ -4,6 +4,7 @@ db.sqlite3
 db-data
 pgadmin-data
 redis-data
+.idea
 
 dist
 node_modules
