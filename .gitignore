@@ -1,0 +1,11 @@
+venv
+.env
+db.sqlite3
+db-data
+pgadmin-data
+redis-data
+
+dist
+node_modules
+
+.mypy_cache

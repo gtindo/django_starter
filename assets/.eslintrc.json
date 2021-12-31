@@ -1,0 +1,48 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2015,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "ignorePatterns": [
+        "webpack.config.js",
+        "./node_modules",
+        "./dist"
+    ],
+    "rules": {
+        "constructor-super": "warn",
+        "for-direction": "warn",
+        "no-async-promise-executor": "error",
+        "no-class-assign": "error",
+        "no-compare-neg-zero": "error",
+        "no-cond-assign": "error",
+        "no-const-assign": "error",
+        "no-constant-condition": "error",
+        "no-debugger": "warn",
+        "no-dupe-args": "error",
+        "no-dupe-class-members": "error",
+        "no-dupe-else-if": "error",
+        "no-dupe-keys": "error",
+        "no-duplicate-case": "error",
+        "no-duplicate-imports": "error",
+        "no-empty-pattern": "error",
+        "no-import-assign": "error",
+        "no-invalid-regexp": "error",
+        "no-unreachable": "error",
+        "no-unreachable-loop": "error",
+        "no-unused-vars": "error",
+        "use-isnan": "error",
+        "no-useless-rename": "error"
+    }
+}
