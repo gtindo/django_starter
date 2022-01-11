@@ -1,8 +1,8 @@
-# Django Startup
+# Django Starter
 
 ## Purpose
 
-Simple startup project for django using HTMl Over the Wire approach, and web components.
+Simple starter project for django using HTMl Over the Wire approach, and web components.
 
 
 ## TODO:
