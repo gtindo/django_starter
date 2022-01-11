@@ -17,3 +17,5 @@ export class HelloWorld extends LitElement {
         `
     }
 }
+
+customElements.define("hello-world", HelloWorld);
