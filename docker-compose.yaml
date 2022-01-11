@@ -16,6 +16,7 @@ services:
       DB_PASSWORD: '${DB_PASSWORD}'
       DB_HOST: db
       REDIS_URI: 'redis://redis:6379'
+      SECRET_KEY: '${SECRET_KEY}'
     command:
       - make
       - start
