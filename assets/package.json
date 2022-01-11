@@ -16,7 +16,8 @@
     "build-ts-prod": "webpack --mode production",
     "build-css": "sass src/styles:dist/css",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "dev": "webpack serve --mode development"
   },
   "devDependencies": {
     "@babel/core": "^7.16.7",
@@ -37,6 +38,7 @@
     "ts-loader": "^9.2.6",
     "typescript": "^4.5.4",
     "webpack": "^5.65.0",
-    "webpack-cli": "^4.9.1"
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.3"
   }
 }
