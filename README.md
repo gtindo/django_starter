@@ -32,8 +32,7 @@ Simple starter project for django using HTMl Over the Wire approach, and web com
 
 
 ## Author
-
-Yvan GUEKENG TINDO
+gtindo_dev
 
 ## Licence
 MIT

@@ -53,9 +53,9 @@ INSTALLED_APPS = [
 
     # External dependencies
     "django_q",
+    "channels"
 
-    # Internal apps
-    'design_system'
+    # Internal modules
 ]
 
 MIDDLEWARE = [
@@ -178,4 +178,15 @@ Q_CLUSTER = {
     'cpu_affinity': 1,
     'label': 'Django Q',
     'django_redis': 'default'
+}
+
+# ASGI Application
+ASGI_APPLICATION = "myproject.asgi.application"
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            "hosts": [REDIS_URI],
+        },
+    },
 }
