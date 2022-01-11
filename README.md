@@ -2,34 +2,36 @@
 
 ## Purpose
 
-Simple starter project for django using HTMl Over the Wire approach, and web components.
+Simple starter project for django using HTML Over the Wire approach, and web components.
 
+## Prequisites
+* Docker
+* docker-compose
+* node 14+
+* yarn
 
-## TODO:
+## Get Started
 
-  * Setup frontend for webcomponents --- revoir la config webpack pour ajouter les polyfills
-  * Add linter for typescript (eslint + prettier) ---
-  * Setup scss ---
-  * Setup turbo --- 
-  * Reload dev build on typescript change
-  * Reload css build on css change
+### Running the project
+* Create .env file following env.example template
+```shell
+cp env.example .env
+```
+* Run services with docker-composes
+```shell
+docker-compose -f docker-compose.yaml -d
+``` 
 
-  * Create makefile :
-    * Build ts
-    * Build css
-    * Run linter
-    * Start server
-
-  * Backend side:
-
-    * Add mypy ---
-    * Setup docker compose with postgresql, redis, webserver -----
-    * Install djangoQ
-    * Install django Channels
-    * Add .env file -----
-
-  * Write a good readme
-
+### Develop web components
+Webcomponents are located inside the assets directory. Here are the steps to start
+* Install dependencies:
+```shell
+yarn install
+``` 
+* run the story book
+```shell
+yarn run storybook
+```
 
 ## Author
 gtindo_dev
